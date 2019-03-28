@@ -1,0 +1,12 @@
+﻿@font-face{
+    src: url(../font/raleway-regular.ttf);
+    font-family: raleway-regular;
+}
+
+@font-face{
+    src: url(../font/montserrat-light.ttf);
+    font-family: montserrat-light;
+}
+
+$RALEWAY_FONT: raleway-regular, Arial, Helvetica, sans-serif;
+$MONTSERRAT_FONT: montserrat-light, Arial, Helvetica, sans-serif;

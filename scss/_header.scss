@@ -1,0 +1,61 @@
+.header{
+    background-image: url(../img/mountain.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: $MAX_WIDTH;
+    min-width: $MIN_WIDTH;
+    padding: 15px 0 0 0;
+}
+
+.logo {
+    margin: 0 220px 0 0;
+    &-svg{
+        width: 64px;
+        height: 56px;
+    }
+    &-txt{
+        color: #fff;
+        font-family: $RALEWAY_FONT;
+        font-size: 34px;
+        font-weight: 400;
+        letter-spacing: -1.36px;
+    }
+}
+
+.nav{
+    &-list{
+        list-style-type: none;
+        display: flex;
+        &__element{
+            color: #fff;
+            margin: 0 15px;
+            color: #ffffff;
+            font-family: $MONTSERRAT_FONT;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+.basket{
+    width: 18px;
+    height: 24px;
+    background-color: #ffffff;
+    background-color: #000000;
+}
+
+.search{
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    background-color: #000000;
+}
+
+.header-content{
+    width: 100%;
+}
