@@ -1,15 +1,21 @@
+$header-padding: 40px;
+$top-margin:37px;
+$text_color: #fff;
+$text_color_hover: #c7b299;
+
 .header{
     background-image: url(../img/mountain.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: $MAX_WIDTH 0 0 0 rgba(0, 0, 0, 0.33) inset;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: $MAX_WIDTH;
     min-width: $MIN_WIDTH;
-    padding: 15px 0 0 0;
+    padding: $header-padding 0 0 0;
 }
 
 .logo {
@@ -19,8 +25,8 @@
         height: 56px;
     }
     &-txt{
-        color: #fff;
-        font-family: $RALEWAY_FONT;
+        color: $text_color;
+        font-family: $raleway_regular;
         font-size: 34px;
         font-weight: 400;
         letter-spacing: -1.36px;
@@ -28,16 +34,21 @@
 }
 
 .nav{
+    margin: $top-margin 0 0 0;
     &-list{
         list-style-type: none;
         display: flex;
+        align-items: top;
         &__element{
-            color: #fff;
-            margin: 0 15px;
-            color: #ffffff;
-            font-family: $MONTSERRAT_FONT;
+            color: $text_color;
+            padding: 3px 15px;
+            cursor: pointer;
+            font-family: $montserrat-light;
             font-size: 14px;
             font-weight: 300;
+            &:hover{
+                color: $text_color_hover;
+            }
         }
     }
 }
@@ -45,17 +56,50 @@
 .basket{
     width: 18px;
     height: 24px;
-    background-color: #ffffff;
-    background-color: #000000;
+    background-image: url(../img/basket.png);
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    margin: $top-margin 0 0 60px;
 }
 
 .search{
     width: 24px;
     height: 24px;
-    background-color: #ffffff;
-    background-color: #000000;
+    background-color: inherit;
+    background-image: url(../img/search.png);
+    border: none;
+    cursor: pointer;
+    margin: $top-margin 0 0 25px;
+}
+
+.title-small{
+    color: $text_color;
+    font-family: $raleway_medium;
+    font-size: 36px;
+}
+
+.title-large{
+    color: $text_color;
+    font-family: $raleway_regular;
+    font-size: 52px;
+    font-weight: 900;
 }
 
 .header-content{
     width: 100%;
+    padding: 280px 0 0 0;
+    &-title{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    &-txt{
+
+    }
+    &-button{
+        &-txt{
+            text-transform: uppercase;
+        }
+    }
 }

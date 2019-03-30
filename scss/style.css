@@ -4,11 +4,16 @@
 }
 
 @font-face {
+  src: url(../font/raleway-medium.ttf);
+  font-family: raleway-medium;
+}
+
+@font-face {
   src: url(../font/montserrat-light.ttf);
   font-family: montserrat-light;
 }
 
-body {
+body, ul {
   margin: 0;
   padding: 0;
 }
@@ -19,9 +24,11 @@ a {
 
 .header {
   background-image: url(../img/mountain.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.33) inset;
+          box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.33) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +40,7 @@ a {
   margin: 0 auto;
   max-width: 1920px;
   min-width: 1280px;
-  padding: 15px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .logo {
@@ -53,37 +60,78 @@ a {
   letter-spacing: -1.36px;
 }
 
+.nav {
+  margin: 37px 0 0 0;
+}
+
 .nav-list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
 }
 
 .nav-list__element {
   color: #fff;
-  margin: 0 15px;
-  color: #ffffff;
+  padding: 3px 15px;
+  cursor: pointer;
   font-family: montserrat-light, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
 
+.nav-list__element:hover {
+  color: #c7b299;
+}
+
 .basket {
   width: 18px;
   height: 24px;
-  background-color: #ffffff;
-  background-color: #000000;
+  background-image: url(../img/basket.png);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  margin: 37px 0 0 60px;
 }
 
 .search {
   width: 24px;
   height: 24px;
-  background-color: #ffffff;
-  background-color: #000000;
+  background-color: inherit;
+  background-image: url(../img/search.png);
+  border: none;
+  cursor: pointer;
+  margin: 37px 0 0 25px;
+}
+
+.title-small {
+  color: #fff;
+  font-family: raleway-medium, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+}
+
+.title-large {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-size: 52px;
+  font-weight: 900;
 }
 
 .header-content {
   width: 100%;
+  padding: 280px 0 0 0;
+}
+
+.header-content-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.header-content-button-txt {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
