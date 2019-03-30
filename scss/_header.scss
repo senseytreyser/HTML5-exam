@@ -15,8 +15,7 @@ $butt_col_br: #736357;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    max-width: $MAX_WIDTH;
-    min-width: $MIN_WIDTH;
+    width: 100%;
     padding: $header-padding 0 0 0;
     position: relative;
 }
@@ -152,6 +151,7 @@ $butt_col_br: #736357;
         border-radius: 5px;
         box-sizing: border-box;
         display: block;
+        //flex: 1 1 auto;
         padding: 15px 35px;
         margin: 50px auto 0 auto;
         text-align: center;
