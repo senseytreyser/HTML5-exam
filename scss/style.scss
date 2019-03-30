@@ -2,3 +2,11 @@
 @import "_fonts";
 @import "_reset";
 @import "_header";
+@import "_service";
+@import "_ideals";
+
+body{
+    max-width: $MAX_WIDTH;
+    min-width: $MIN_WIDTH;
+    margin: 0 auto;
+}
