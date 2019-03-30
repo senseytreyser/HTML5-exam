@@ -27,8 +27,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.33) inset;
-          box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.33) inset;
+  -webkit-box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 1920px 0 0 0 rgba(0, 0, 0, 0.5) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +41,7 @@ a {
   max-width: 1920px;
   min-width: 1280px;
   padding: 40px 0 0 0;
+  position: relative;
 }
 
 .logo {
@@ -107,6 +108,55 @@ a {
   margin: 37px 0 0 25px;
 }
 
+.header-button-left, .header-button-right {
+  background-color: transparent;
+  background-image: url(../img/arrow.png);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  height: 73px;
+  top: 480px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  width: 40px;
+}
+
+.header-button-left:focus, .header-button-right:focus {
+  outline: none;
+}
+
+.header-button-left {
+  left: 150px;
+}
+
+.header-button-left:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header-button-left:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header-button-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 150px;
+}
+
+.header-button-right:hover {
+  -webkit-transform: rotate(180deg) scale(1.2);
+          transform: rotate(180deg) scale(1.2);
+}
+
+.header-button-right:active {
+  -webkit-transform: rotate(180deg) scale(1);
+          transform: rotate(180deg) scale(1);
+}
+
 .title-small {
   color: #fff;
   font-family: raleway-medium, Arial, Helvetica, sans-serif;
@@ -118,9 +168,15 @@ a {
   font-family: raleway-regular, Arial, Helvetica, sans-serif;
   font-size: 52px;
   font-weight: 900;
+  margin: 20px 0;
 }
 
 .header-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 280px 0 0 0;
 }
@@ -131,7 +187,74 @@ a {
   text-align: center;
 }
 
+.header-content-txt {
+  color: #fff;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  width: 570px;
+}
+
+.header-content-button {
+  background-color: #998675;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: 15px 35px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 0 #736357;
+          box-shadow: 0 3px 0 #736357;
+  width: 170px;
+}
+
 .header-content-button-txt {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 23px;
   text-transform: uppercase;
+}
+
+.header-content-button:hover {
+  background-color: #736357;
+}
+
+.header-content-button:active {
+  background-color: #998675;
+}
+
+.points-row {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 325px auto 40px auto;
+}
+
+.points-row .points {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 10px;
+  margin: 5px;
+  width: 10px;
+}
+
+.points-row .points:hover {
+  background-color: inherit;
+  border: 2px solid white;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=style.css.map */
