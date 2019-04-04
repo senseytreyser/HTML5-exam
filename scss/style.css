@@ -386,6 +386,67 @@ a {
   z-index: 1;
 }
 
+.aside {
+  background: #211b19;
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 );
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+  width: 100%;
+}
+
+.aside-content {
+  margin: 0 460px 0 0;
+}
+
+.aside-title {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-size: 28pt;
+}
+
+.aside-title-first-word {
+  color: #c7b299;
+}
+
+.aside-txt {
+  color: #615855;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 18pt;
+  line-height: 20pt;
+}
+
+.aside-button {
+  background-color: #998675;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 0 #736357;
+          box-shadow: 0 3px 0 #736357;
+  width: 170px;
+}
+
+.aside-button-txt {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
 body {
   max-width: 1920px;
   min-width: 1280px;

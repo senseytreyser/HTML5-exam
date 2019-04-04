@@ -1,0 +1,52 @@
+﻿.aside{
+    $color_title: #fff;
+    $color_word: #c7b299;
+    $color_txt: #615855;
+    $aside_gray: #392921;
+
+    @include gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    width: 100%;
+
+    &-content{
+        margin: 0 460px 0 0;
+    }
+    
+    &-title{
+        color: $color_title;
+        font-family: $raleway_regular;
+        font-size: 28pt;
+        &-first-word{
+            color: $color_word;
+        }
+    }
+    &-txt{
+        color: $color_txt;
+        font-family: $montserrat-light;
+        font-size: 18pt;
+        line-height: 20pt;
+    }
+
+    &-button{
+        background-color: $butt_cl;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: block;
+        padding: 20px 0;
+        //margin: 50px auto 0 auto;
+        text-align: center;
+        box-shadow: 0 3px 0 $butt_col_br;
+        width: 170px;
+        &-txt{
+            color: $color_title;
+            font-family: $raleway_regular;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+    }
+}
