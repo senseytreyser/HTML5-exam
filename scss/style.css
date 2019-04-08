@@ -391,6 +391,8 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 );
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +407,7 @@ a {
 }
 
 .aside-content {
-  margin: 0 460px 0 0;
+  margin: 0 310px 0 0;
 }
 
 .aside-title {
@@ -432,6 +434,7 @@ a {
           box-sizing: border-box;
   display: block;
   padding: 20px 0;
+  margin: 0 0 0 0;
   text-align: center;
   -webkit-box-shadow: 0 3px 0 #736357;
           box-shadow: 0 3px 0 #736357;
@@ -445,6 +448,108 @@ a {
   font-size: 14px;
   line-height: 23px;
   text-transform: uppercase;
+}
+
+.latest {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+}
+
+.latest-title {
+  color: #555;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.latest-txt {
+  color: #8c8c8c;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+  width: 760px;
+}
+
+.latest-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+  width: 760px;
+}
+
+.latest-button {
+  color: #8c8c8c;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+  padding: 8px 20px;
+}
+
+.latest-button:hover {
+  background-color: #998675;
+  color: #fff;
+}
+
+.latest-button:active {
+  background-color: transparent;
+  color: #8c8c8c;
+}
+
+.latest-button:focus {
+  outline: none;
+}
+
+.latest-articls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.latest-article {
+  margin: 0 15px 30px 15px;
+}
+
+.latest-article-header {
+  background-color: #fbfaf8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+
+.latest-article-title {
+  color: #c7b299;
+  font-family: raleway-medium, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.latest-article-txt {
+  color: #d1d1d1;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 body {

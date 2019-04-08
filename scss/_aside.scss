@@ -5,6 +5,7 @@
     $aside_gray: #392921;
 
     @include gradient;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@
     width: 100%;
 
     &-content{
-        margin: 0 460px 0 0;
+        margin: 0 310px 0 0;
     }
     
     &-title{
@@ -36,7 +37,7 @@
         box-sizing: border-box;
         display: block;
         padding: 20px 0;
-        //margin: 50px auto 0 auto;
+        margin: 0 0 0 0;
         text-align: center;
         box-shadow: 0 3px 0 $butt_col_br;
         width: 170px;

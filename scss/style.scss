@@ -1,11 +1,12 @@
 @import "_constant";
 @import "_fonts";
 @import "_reset";
-@import "mixin";
+@import "_mixin";
 @import "_header";
 @import "_service";
 @import "_ideals";
 @import "_aside";
+@import "_latest";
 
 body{
     max-width: $MAX_WIDTH;

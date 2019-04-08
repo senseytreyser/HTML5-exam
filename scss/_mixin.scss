@@ -5,3 +5,19 @@
     background: linear-gradient(to right, $first_color 0%,$second_color 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 ); 
 }
+
+@mixin text ($size:16px,$line-height:28px){
+    color: #8c8c8c;
+    font-family:$montserrat-light;
+    font-size: $size;
+    line-height: $line-height;
+    text-align: center;
+}
+
+@mixin title ($size:30px){
+    color: #555;
+    font-family: $raleway_regular;
+    font-weight: 900;
+    font-size: $size;
+    text-align: center;
+}
