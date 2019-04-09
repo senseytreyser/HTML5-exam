@@ -22,6 +22,12 @@ a {
   text-decoration: none;
 }
 
+body {
+  max-width: 1920px;
+  min-width: 1280px;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url(../img/mountain.png);
   background-repeat: no-repeat;
@@ -552,9 +558,66 @@ a {
   font-size: 14px;
 }
 
-body {
-  max-width: 1920px;
-  min-width: 1280px;
-  margin: 0 auto;
+.presentation {
+  position: relative;
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  z-index: 1;
+}
+
+.video-cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 3px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video-title {
+  display: block;
+  width: 100%;
+}
+
+.devices {
+  background-color: #fbfaf8;
+}
+
+.numbers {
+  background: #211b19;
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 );
+}
+
+.posts {
+  background-color: #fff;
+}
+
+.friends {
+  background-color: #424245;
+  background-image: url(../img/bg_friends.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background-color: #191919;
+}
+
+.autor {
+  background-color: #111;
 }
 /*# sourceMappingURL=style.css.map */
