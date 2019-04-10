@@ -730,6 +730,56 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 70px 0 60px 0;
+}
+
+.numbers-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 40px;
+}
+
+.numbers-part:after {
+  border: 1px solid #fff;
+  content: "";
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 30px;
+}
+
+.numbers-svg {
+  height: 44px;
+  width: 44px;
+}
+
+.numbers-number {
+  color: #fff;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 0.75;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+
+.numbers-txt {
+  color: #c7b299;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
 }
 
 .posts {
