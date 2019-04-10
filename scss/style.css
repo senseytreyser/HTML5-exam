@@ -570,6 +570,7 @@ body {
 
 .video-cover {
   background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
   position: absolute;
   left: 0;
   right: 0;
@@ -579,16 +580,79 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+.video-cover:hover .video-button {
+  opacity: 0.8;
+}
+
+.video-cover:active .video-button {
+  opacity: 0.2;
+}
+
+.video-button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.2;
+  margin: 0 0 44px 0;
+  height: 100px;
+  width: 100px;
+}
+
+.video-button:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 3px 3px #fff;
+          box-shadow: 0 0 3px 3px #fff;
+}
+
 .video-title {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
   display: block;
-  width: 100%;
+}
+
+.video-txt {
+  color: #fff;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+  margin: 30px 0 40px 0;
+  width: 552px;
+}
+
+.video-duration {
+  color: #c7b299;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .devices {
