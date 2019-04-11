@@ -21,3 +21,10 @@
     font-size: $size;
     text-align: $align;
 }
+
+@mixin border-radius ($r:10px){
+    -moz-border-radius: $r; /* Firefox */
+    -webkit-border-radius: $r; /* Safari, Chrome */
+    -khtml-border-radius: $r; /* KHTML */
+    border-radius: $r; /* CSS3 */
+}
