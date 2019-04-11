@@ -974,6 +974,26 @@ body {
   background-color: #191919;
 }
 
+.info {
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 90px 0 80px;
+}
+
+.about,
+.recent-posts,
+.twitter,
+.widget {
+  color: #555;
+  width: 270px;
+  margin: 0 15px;
+}
+
 .autor {
   background-color: #111;
 }
