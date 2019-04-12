@@ -50,7 +50,14 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 220px 0 0;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
 }
 
 .logo-svg {
@@ -64,10 +71,21 @@ body {
   font-size: 34px;
   font-weight: 400;
   letter-spacing: -1.36px;
+  margin-top: 15px;
+}
+
+.logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.logo:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .nav {
-  margin: 37px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 .nav-list {
@@ -100,7 +118,21 @@ body {
   background-color: inherit;
   border: none;
   cursor: pointer;
-  margin: 37px 0 0 60px;
+  margin: 25px 0 0 60px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.basket:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.basket:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .search {
@@ -110,7 +142,21 @@ body {
   background-image: url(../img/search.png);
   border: none;
   cursor: pointer;
-  margin: 37px 0 0 25px;
+  margin: 25px 0 0 25px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.search:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.search:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .header-button-left, .header-button-right {
@@ -305,6 +351,14 @@ body {
   color: #c7b299;
 }
 
+.service-item:hover .service-item-svg {
+  fill: #c7b299;
+}
+
+.service-item-svg {
+  fill: #555;
+}
+
 .service-item-title {
   font-family: raleway-regular, Arial, Helvetica, sans-serif;
   font-size: 22px;
@@ -454,6 +508,14 @@ body {
   font-size: 14px;
   line-height: 23px;
   text-transform: uppercase;
+}
+
+.aside-button:hover {
+  background-color: #736357;
+}
+
+.aside-button:active {
+  background-color: #998675;
 }
 
 .latest {
@@ -737,6 +799,9 @@ body {
 }
 
 .numbers-part {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,7 +825,7 @@ body {
 
 .numbers-svg {
   height: 44px;
-  width: 44px;
+  fill: #c7b299;
 }
 
 .numbers-number {
@@ -994,7 +1059,102 @@ body {
   margin: 0 15px;
 }
 
+.about-txt {
+  color: #8c8c8c;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.about-link {
+  color: #d1d1d1;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: left;
+  display: block;
+  margin: 30px 0 0 0;
+}
+
+.about-link:hover:after {
+  content: "";
+  border: 5px solid transparent;
+  border-left: 5px solid #d1d1d1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  left: 5px;
+  position: relative;
+  top: 1px;
+  width: 10px;
+}
+
+.recent-posts-title {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: left;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.recent-posts-post {
+  cursor: default;
+  padding: 20px 0;
+}
+
+.recent-posts-post:nth-of-type(2n) {
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+}
+
+.recent-posts-post-data {
+  color: #363636;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.recent-posts-post-txt {
+  color: #8c8c8c;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  word-break: break-all;
+}
+
+.recent-posts-post:hover .recent-posts-post-txt {
+  color: #c7b299;
+}
+
+.recent-posts-post:hover .recent-posts-post-data {
+  color: #fff;
+}
+
+.twitter-title {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: left;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
 .autor {
   background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
 }
 /*# sourceMappingURL=style.css.map */

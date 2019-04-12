@@ -18,6 +18,81 @@
     margin: 0 15px;
 }
 
+.about{
+    &-txt{
+        @include text($size:14px,$line-height:1.7,$align:left);
+        margin-top: 25px;
+    }
+    &-link{
+        $link-color: #d1d1d1;
+
+        @include text($size:14px,$align:left,$color:$link-color);
+        display: block;
+        margin: 30px 0 0 0;
+
+        &:hover:after{
+            content: "";
+            border: 5px solid transparent;	
+            border-left: 5px solid $link-color;
+            box-sizing: border-box;
+            display: inline-block;
+            left: 5px;
+            position: relative;
+            top: 1px;
+            width: 10px;
+        }
+    }
+}
+
+.recent-posts{
+    
+    &-title{
+        @include title($size:24px,$color:#fff,$align:left);
+        display: block;
+        margin: 0 0 10px 0;
+    }
+
+    &-post{
+        cursor: default;
+        padding: 20px 0;
+
+        //Добавление границ у чётных блоков
+        &:nth-of-type(2n){
+            border-top: 1px solid #252525;
+            border-bottom: 1px solid #252525;
+        }
+        
+        &-data{
+            @include text($size:12px, $color:#363636);
+            margin: 0 0 10px 0; 
+        }
+
+        &-txt{
+            @include text($size:14px, $align:left, $line-height:1.5);
+            word-break: break-all;
+        }
+
+        &:hover &-txt{
+            color: #c7b299;
+        }
+        &:hover &-data{
+            color: #fff;
+        }
+    }
+    
+}
+
+.twitter{
+    &-title{
+        @include title($size:24px,$color:#fff,$align:left);
+        display: block;
+        margin: 0 0 10px 0;
+    } 
+}
+
 .autor{
     background-color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
 }

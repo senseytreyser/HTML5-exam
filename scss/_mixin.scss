@@ -28,3 +28,10 @@
     -khtml-border-radius: $r; /* KHTML */
     border-radius: $r; /* CSS3 */
 }
+
+@mixin hyphens{
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}

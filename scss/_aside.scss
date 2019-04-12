@@ -49,5 +49,11 @@
             line-height: 23px;
             text-transform: uppercase;
         }
+        &:hover{
+            background-color: $butt_col_br;
+        }
+        &:active{
+            background-color: $butt_cl;
+        }
     }
 }

@@ -30,9 +30,12 @@
         &:hover &-title{
             color: $color_txt_hover;
         }
+        &:hover &-svg{
+            fill: $color_txt_hover;
+        }
 
         &-svg{
-
+            fill: #555;
         }
         
         &-title{

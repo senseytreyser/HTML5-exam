@@ -5,6 +5,7 @@
     padding: 70px 0 60px 0;
 
     &-part{
+        align-items: center;
         display: flex;
         flex-direction: column;
         margin: 0 40px;
@@ -20,7 +21,8 @@
 
     &-svg{
         height: 44px;
-        width: 44px;  
+        //width: 60px;  
+        fill: #c7b299;
     }
 
     &-number{
