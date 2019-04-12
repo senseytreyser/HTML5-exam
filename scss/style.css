@@ -1047,7 +1047,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 90px 0 80px;
+  padding: 70px 0 80px;
 }
 
 .about,
@@ -1057,6 +1057,12 @@ body {
   color: #555;
   width: 270px;
   margin: 0 15px;
+}
+
+.about .logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about-txt {
@@ -1098,7 +1104,7 @@ body {
   font-size: 24px;
   text-align: left;
   display: block;
-  margin: 0 0 10px 0;
+  margin: 25px 0 10px 0;
 }
 
 .recent-posts-post {
@@ -1144,7 +1150,73 @@ body {
   font-size: 24px;
   text-align: left;
   display: block;
-  margin: 0 0 10px 0;
+  margin: 25px 0 10px 0;
+}
+
+.twitter-block {
+  padding: 20px 0;
+}
+
+.twitter-block:nth-of-type(2n) {
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+}
+
+.twitter-txt {
+  color: #8c8c8c;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  word-break: break-all;
+}
+
+.twitter-twit {
+  color: #00bff3;
+}
+
+.twitter-link {
+  color: #959595;
+}
+
+.twitter-data {
+  color: #363636;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.widget-title {
+  color: #fff;
+  font-family: raleway-regular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: left;
+  display: block;
+  margin: 25px 0 10px 0;
+  width: 100%;
+}
+
+.widget-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.widget-link {
+  display: inline-block;
+  height: 98px;
+  margin-bottom: 10px;
+  width: 130px;
+}
+
+.widget-link:nth-of-type(odd) {
+  margin-right: 10px;
 }
 
 .autor {
@@ -1156,5 +1228,30 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 0;
+}
+
+.autor-block {
+  padding: 0 12px;
+  color: #555;
+  font-family: montserrat-light, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.autor-link {
+  border-left: 1px solid #555;
+}
+
+.autor-link:hover {
+  color: #c7b299;
+}
+
+.support {
+  margin: 0 440px 0 0;
+}
+
+.light {
+  color: #959595;
 }
 /*# sourceMappingURL=style.css.map */

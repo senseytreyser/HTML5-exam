@@ -6,7 +6,7 @@
     background-color: #191919;
     display: flex;
     justify-content: center;
-    padding: 90px 0 80px;
+    padding: 70px 0 80px;
 }
 
 .about,
@@ -19,6 +19,11 @@
 }
 
 .about{
+
+    .logo-footer{
+        display: flex;
+    }
+
     &-txt{
         @include text($size:14px,$line-height:1.7,$align:left);
         margin-top: 25px;
@@ -49,7 +54,7 @@
     &-title{
         @include title($size:24px,$color:#fff,$align:left);
         display: block;
-        margin: 0 0 10px 0;
+        margin: 25px 0 10px 0;
     }
 
     &-post{
@@ -86,13 +91,92 @@
     &-title{
         @include title($size:24px,$color:#fff,$align:left);
         display: block;
-        margin: 0 0 10px 0;
+        margin: 25px 0 10px 0;
     } 
+
+    &-block{
+        padding: 20px 0;
+
+        //Добавление границ у чётных блоков
+        &:nth-of-type(2n){
+            border-top: 1px solid #252525;
+            border-bottom: 1px solid #252525;
+        }
+    }
+
+    &-txt{
+        @include text($size:14px, $align:left, $line-height:1.5);
+        word-break: break-all;
+    }
+
+    &-twit{
+        color: #00bff3;
+    }
+
+    &-link{
+        color: #959595;
+    }
+
+    &-data{
+        @include text($size:12px, $color:#363636);
+            margin: 10px 0 0 0; 
+    }
+}
+
+.widget{
+    
+    
+    &-title{
+        @include title($size:24px,$color:#fff,$align:left);
+        display: block;
+        margin: 25px 0 10px 0;
+        width: 100%;
+    }
+
+    &-links{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-link{
+        display: inline-block;
+        height: 98px;
+        margin-bottom: 10px;
+        width: 130px;
+
+        &:nth-of-type(odd){
+            margin-right: 10px;
+        }
+    }
 }
 
 .autor{
+    
     background-color: #111;
     display: flex;
     justify-content: center;
     padding: 50px 0;
+
+    &-block{
+        padding: 0 12px;
+        @include text($size:13px,$color: #555);;
+    }
+
+    &-link{
+        border-left: 1px solid #555;
+        
+
+        &:hover{
+            color: #c7b299;
+        }
+    }
+}
+
+.support{
+    margin: 0 440px 0 0;
+}
+
+.light{
+    color: #959595;
 }
