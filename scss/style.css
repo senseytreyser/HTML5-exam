@@ -597,7 +597,16 @@ body {
 }
 
 .latest-article {
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 15px 30px 15px;
+  position: relative;
 }
 
 .latest-article-header {
@@ -606,6 +615,22 @@ body {
           box-sizing: border-box;
   width: 100%;
   padding: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.latest-article-header:before {
+  content: "";
+  border: 30px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  position: absolute;
+  left: 5px;
+  top: -45px;
+  width: 30px;
+  z-index: 2;
 }
 
 .latest-article-title {
@@ -618,6 +643,63 @@ body {
   color: #d1d1d1;
   font-family: montserrat-light, Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+.latest-article-hover-cover {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #000;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.latest-article-hover-cover-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 100px 0 0 0;
+}
+
+.latest-article-hover-cover-button:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 2px #555;
+          box-shadow: 0 0 5px 2px #555;
+}
+
+.latest-article-hover-cover-svg {
+  fill: #fff;
+}
+
+.latest-article-hover-cover-svg:hover {
+  fill: #998675;
+}
+
+.latest-article-hover-cover-svg:active {
+  fill: #fff;
+}
+
+.latest-article:hover .latest-article-header {
+  background-color: #362f2d;
+}
+
+.latest-article:hover .latest-article-header:before {
+  border-bottom-color: #362f2d;
+}
+
+.latest-article:hover .latest-article-hover-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
 }
 
 .presentation {
