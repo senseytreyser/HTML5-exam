@@ -143,6 +143,9 @@
 }
 
 .small-button{
+    $color:#d4d4d4;
+    $hover_color:#c7b299;
+
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -152,17 +155,48 @@
     &-left,
     &-right{
         background-color: transparent;
-        border: 1px solid #d4d4d4;
+        border: 1px solid $color;
         border-radius: 50%;
         box-sizing: border-box;
         cursor: pointer;
         margin: 0 4px;
         height: 22px;
+        position: relative;
         width: 22px;
+    }
+
+    &-left::after,
+    &-left::before,
+    &-right::after,
+    &-right::before{
+        border: 7px solid transparent;
+        border-right: 7px solid $color;
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: 3px;
+        z-index: 1;
+    }
+
+    &-left::before,
+    &-right::before{
+        border-right-color: #fff;
+        left: 0px;
+        top: 3px;
+        z-index: 2;
+    }
+
+    &-right{
+        transform: rotate(180deg);
     }
 
     &-left:hover,
     &-right:hover{
-        border-color: #c7b299;
+        border-color: $hover_color;
+    }
+
+    &-left:hover:after,
+    &-right:hover:after{
+        border-right-color: $hover_color;
     }
 }
