@@ -5,6 +5,10 @@ $text_color_hover: #c7b299;
 $butt_cl: #998675;
 $butt_col_br: #736357;
 
+.svg-sprite{
+    display: none;
+}
+
 .header{
     background-image: url(../img/mountain.png);
     background-repeat: no-repeat;
@@ -47,10 +51,13 @@ $butt_col_br: #736357;
 
 .nav{
     margin: $top-margin 0 0 0;
+    
     &-list{
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         align-items: top;
+
         &__element{
             color: $text_color;
             padding: 3px 15px;
@@ -120,7 +127,7 @@ $butt_col_br: #736357;
         }
     }
     &-left{
-        left: 150px;
+        left: 10%;
         &:hover{
             transform: scale(1.2);
         }
@@ -130,7 +137,7 @@ $butt_col_br: #736357;
     }
     &-right{
         transform: rotate(180deg);
-        right: 150px;
+        right: 10%;
         &:hover{
             transform: rotate(180deg) scale(1.2);    
         }
@@ -228,4 +235,27 @@ $butt_col_br: #736357;
             transform: scale(1.4);
         }
     }
+}
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .header-content,
+    .points-row,
+    .header-button-left,
+    .header-button-right{
+        display: none;
+    }
+    
+    .logo{
+        margin: 30px;
+    }
+
+    .nav{
+        width: 100%;
+        
+        &-list{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
 }

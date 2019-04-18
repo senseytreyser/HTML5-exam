@@ -200,3 +200,37 @@
         border-right-color: $hover_color;
     }
 }
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .posts{
+        box-sizing: border-box;
+        padding: 0 $MEDIA_L_R_PADDING 30px;
+
+        &-txt{
+            width: 100%;
+        }
+        
+        &-row{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+
+    .post{
+        margin: 0 0 30px;
+        width: 90%;
+
+        &-img-wrap{
+            width: 100%;
+        }
+
+        &-img{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .small-button{
+        display: none;
+    }
+}

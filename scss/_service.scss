@@ -2,6 +2,7 @@
     $color_txt: #8c8c8c;
     $color_txt_hover: #c7b299;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     
@@ -53,6 +54,18 @@
             line-height: 24px;
             margin: 0 0 30px 0;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .service{
+        box-sizing: border-box;
+        padding: 20px $MEDIA_L_R_PADDING;
+
+        &-item{
+            margin: 20px 0;
+            width: 100%;
         }
     }
 }

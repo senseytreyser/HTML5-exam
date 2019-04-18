@@ -180,3 +180,32 @@
 .light{
     color: #959595;
 }
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    footer{
+        //display: none;
+    }
+    
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .autor{
+        flex-wrap: wrap;
+
+        &-wrap{
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    .support{
+        margin: 0;
+    }
+
+    .designed,
+    .only{
+        margin-top: 20px;
+        width: 50%;
+    }
+}

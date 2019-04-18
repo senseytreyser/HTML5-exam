@@ -41,3 +41,9 @@
         }
     }
 }
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .devices{
+        display: none;
+    }
+}

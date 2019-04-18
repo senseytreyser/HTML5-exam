@@ -1,6 +1,6 @@
 ﻿.latest{
     box-sizing: border-box;
-    padding: 80px;
+    padding: 80px 0;
 
     &-title{
         @include title;
@@ -136,6 +136,28 @@
         &:hover &-hover-cover{
             display: flex;
             z-index: 1;
+        }
+    }
+}
+
+@media (max-width:$MEDIA_WIDTH_SMALL){
+    .latest{
+        padding: 50px $MEDIA_L_R_PADDING;
+        &-txt,
+        &-buttons,
+        &-articls{
+            width: 100%;
+        }
+
+        &-buttons{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        &-button{
+            margin: 10px;
+            width: 60%;
         }
     }
 }

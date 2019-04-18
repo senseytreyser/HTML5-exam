@@ -61,3 +61,34 @@
     }
 
 }
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .ideals{
+        box-sizing: border-box;
+        padding: 0 $MEDIA_L_R_PADDING;
+    }
+
+    .ideals-example{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-image{
+            height: auto;
+            width: 100%;
+
+            &:nth-last-of-type(2){
+                margin: 20px 0;
+            }
+        }
+
+        .ideal-1,
+        .ideal-2,
+        .ideal-3{
+            position: relative; 
+        }
+
+
+    }
+}
