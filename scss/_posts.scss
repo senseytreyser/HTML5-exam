@@ -204,7 +204,7 @@
 @media (max-width: $MEDIA_WIDTH_SMALL){
     .posts{
         box-sizing: border-box;
-        padding: 0 $MEDIA_L_R_PADDING 30px;
+        padding: 30px $MEDIA_L_R_PADDING 30px;
 
         &-txt{
             width: 100%;

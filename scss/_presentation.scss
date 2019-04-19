@@ -16,7 +16,7 @@
         left: 0;
         right: 0; 
         top: 0;
-        bottom: 3px;
+        bottom: 0px;
         z-index: 2;
         display: flex;
         align-items: center;
@@ -71,6 +71,23 @@
 
 @media (max-width: $MEDIA_WIDTH_SMALL){
     .presentation{
-        display: none;
+        background: url(../img/bg_video.jpg);
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 30px 15px;
+    }
+
+    .video{
+        visibility: hidden;
+        min-height: 400px;
+
+        &-cover{
+            flex-direction: column;
+            overflow: hidden;
+            padding: 15px;
+        }
+        &-txt{
+            width: 100%;
+        }
     }
 }
